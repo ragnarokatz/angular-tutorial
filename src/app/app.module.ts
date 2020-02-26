@@ -1,25 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from "@angular/forms";
+
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
-// These two were added by the Angular CLI generator
-import { BodyComponent } from './body.component';
-import { IoComponent } from './io.component';
-
-// This app.module.ts has configuration settings for the app overall
+import { HomeComponent } from './home.component';
+import { AboutMeComponent } from './about-me.component';
+import { ContactMeComponent } from './contact-me.component';
+import { NotFoundComponent } from './not-found.component';
+import { NavMainComponent } from './nav-main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BodyComponent,
-    IoComponent
+    HomeComponent,
+    AboutMeComponent,
+    ContactMeComponent,
+    NotFoundComponent,
+    NavMainComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
